@@ -18,14 +18,22 @@ i {
     color: #C2C5BB;
 }
 
-#nav {
-    color:#C2C5BB !important
+.nav-item {
+    text-decoration: none;
+    color:hsl(78, 8%, 50%);
+    font-family: 'Nunito', monospace;
+    padding: 0.5em;
+}
+
+.nav-item:hover {
+    color: #C2C5BB;
+    
 }
 
 .content-card {
     background-color: #1A4C33;
     color: #C2C5BB;
-    font-family: 'Nunito', monospace !important
+    font-family: 'Nunito', monospace;
 }
 .workshop-photo {
     max-height: 80vh;

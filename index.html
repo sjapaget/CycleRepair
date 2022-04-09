@@ -18,7 +18,7 @@
             <div class="col-3">
                 <i class="logo fa-solid fa-bicycle"></i>
             </div>
-            <nav class="col-9 navbar navbar-expand-lg navbar-light">
+            <nav class="col-9 navbar navbar-expand-lg">
                 <div class="container-fluid">
                   <a class="navbar-brand" href="#"><h1 class="title">Cycle Repair</h1>
                   </a>
@@ -26,12 +26,11 @@
                     <i class="fa-solid fa-bars"></i>
                   </button>
                   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div id="nav" class="navbar-nav">
-                      <a class="nav-link active" aria-current="page" href="#">Home</a>
-                      <a class="nav-link" href="#">Login / Sign up</a>
-                      <a class="nav-link" href="#">Bicycle Anatomy</a>
-                      <a class="nav-link" href="#">Repair Guides</a>
-                      <a class="nav-link" href="#">Repair Guides</a>
+                    <div class="navbar-nav">
+                      <a class="nav-item" aria-current="page" href="#">Home</a>
+                      <a class="nav-item" href="#">Login / Sign up</a>
+                      <a class="nav-item" href="#">Bicycle Anatomy</a>
+                      <a class="nav-item" href="#">Repair Guides</a>
                     </div>
                   </div>
                 </div>
@@ -40,44 +39,44 @@
         </header>
         <main>
         <div class="row text-center">
-            <div class="d-none d-md-block h-100 col-3 text-center">
+            <div class="d-none d-lg-block h-100 col-3 text-center">
                 <img class="workshop-photo img-fluid rounded" src="images\manny-becerra--4gfGVL7Sxw-unsplash.jpg" alt="photo of a bicycle workshop">
             </div>
             <div class="col mb-2">
-                <div class=" content-card p-2 text-center border rounded">
-                    <div class>
-                        <p>Search your problem</p>
+                <div class="content-card p-2 text-center border rounded">
+                    <div>
+                        <p><i class="me-2 fa-solid fa-magnifying-glass"></i> Search your problem</p>
                         <i class="fa-solid fa-angles-down"></i>
                     </div>
                     <div>
-                        <p class="pt-2">Identify the repair</p>
+                        <p class="pt-2"><i class="me-2 fa-solid fa-lightbulb"></i> Identify the repair</p>
                         <i class="fa-solid fa-angles-down"></i>
                     </div>
                     <div>
-                        <p>Access the repair guide</p>
+                        <p class="pt-2"><i class="me-2 fa-solid fa-screwdriver-wrench"></i> Follow the repair guide</p>
                         <i class="fa-solid fa-angles-down"></i>
                     </div>
                     <div>
-                        <p>Fix it</p>
-                        <i class="fa-solid fa-angles-down"></i>
-                    </div>
-                    <div>
-                        <p>Ride!</p>
+                        <p class="pt-2"><i class="me-2 fa-solid fa-flag-checkered"></i>It's fixed!</p>
+                        
                     </div>
                 </div>
-                <div class="content-card mt-2 p-2 text-center  border rounded">
-                    <label class="m-1 title" for="repair-identifier"><h2>What's wrong with your bicycle?</h2></label>
+                <div class="d-grid gap-2 content-card mt-2 p-2 text-center  border rounded">
+                    <label class="m-1 title" for="repair-identifier"><h3>What's wrong with your bicycle?</h3></label>
                     <select class="form-select" name="repair-identifier" id="repair-identifier" aria-label="repair identifier select">
                         <option selected disabled>Choose an option:</option>
                         <option value="sound">It's making an unusual sound</option>
                         <option value="puncture">It's got a flat tyre</option>
                         <option value="transmission">There's a problem with the chain or the gears</option>
                     </select>
-                    <button class="m-1 btn btn-success btn-block">Confirm</button>
+                    <button class="m-1 btn btn-success" type="button">Search</button>
                 </div>
             </div>
+            <div class="align-middle d-none d-lg-block h-100 col-3 text-center">
+                <img class="workshop-photo img-fluid rounded" src="images\vitamina-poleznova-8INZ1fhNxZo-unsplash.jpg" alt="photo of a bicycle workshop">
+            </div>
         </div>
-            
+         
 
             
         </main>
