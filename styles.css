@@ -1,3 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Emblema+One&family=Nunito:wght@500&display=swap');
+
+body {
+    background-color: #17432d ;
+}
+
+i {
+    color: #C2C5BB;
+    font-size: 1.5em;
+}
+
+.logo {
+    font-size: 4em;
+}
+
+.title {
+    font-family: 'Emblema One' , cursive;
+    color: #C2C5BB;
+}
+
+#nav {
+    color:#C2C5BB !important
+}
+
+.content-card {
+    background-color: #1A4C33;
+    color: #C2C5BB;
+    font-family: 'Nunito', monospace !important
+}
 .workshop-photo {
     max-height: 80vh;
 }
+
