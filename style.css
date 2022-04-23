@@ -52,6 +52,7 @@ h1 {
   font-family: 'Concert One', cursive;
   font-size: 72px;
   margin-top: 0;
+  margin-bottom: 0;
   text-shadow: 2px 3px 5px #d6c6ad;
 }
 
@@ -66,6 +67,9 @@ header p {
 
 main {
   margin-bottom: 35px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 }
 
 h2 {
@@ -75,6 +79,12 @@ h2 {
 
 i {
   font-size: 42px;
+}
+
+img {
+  border-radius: inherit;
+  width: 275px;
+  height: auto;
 }
 
 footer {
@@ -98,15 +108,9 @@ footer li {
   
 }
 
-.flex-container {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-}
-
 .card {
   background: radial-gradient(#3a706d 30%, #305d5b);
-  border-radius: 5px;
+  border-radius: 15px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -116,14 +120,27 @@ footer li {
   padding: 0.5em;
 }
 
+.img-card {
+  border-radius: 15px;
+  display: none;
+  margin: 0.1em;
+  width: 275px;
+  padding: 0.5em;
+}
+
 .card button {
-  border: transparent;
+  border: solid transparent;
   border-radius: 25px;
-  
   font-family: inherit;
   font-weight: bold;
   margin: 1em;
   width: 80%;
+}
+
+.card button:hover {
+  background-color: transparent;
+  border: solid;
+  color: #EDE6DB;
 }
 
 
@@ -136,21 +153,51 @@ footer li {
 
   #menu-button-container {
     display: grid;
-    grid-template-columns: 5fr 1fr;
+    grid-template-columns: 11fr 1fr;
+    justify-content: center;
+    align-content: center;
   }
 
   #nav-menu-button {
+    border-radius: 15px;
     display: grid;
-    padding: 0.5em
+    font-size: 36px;
+    margin: 0.5em;
+    margin-left: 0;
+    padding:  0.2em 0.3em;
   }
 
-  header h1 {
-    margin-bottom: 0;
+  #nav-menu-button:hover {
+    background-color: #1A3C40;
+    color:#EDE6DB
   }
 
   header p {
     font-size: 36px;
     margin: 0.2em;
   }
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  .tablet-img {
+    display: flex;
+  }
+}
+
+@media (min-width: 1024px) {
+  main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    
+  }
+   
+  .img-card {
+    display: flex;
+  }
+  
 
 }
