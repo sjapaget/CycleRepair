@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>RiDIY</title>
   <link rel="icon" href="images\logo-black.ico">
+  <script src="https://kit.fontawesome.com/ef034b0f69.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Abel&family=Concert+One&display=swap" rel="stylesheet">
@@ -15,14 +16,17 @@
   <header>
     <nav class="">
       <ul>
-        <li><a href="" target="_blank">Ask Mechanica: repair identifier</a></li>
+        <li><a href="" target="_blank">Fix Finder: repair identifier</a></li>
         <li><a href="" target="_blank">Find some experts</a></li>
         <li><a href="" target="_blank">Parts & Tools</a></li>
         <li><a href="" target="_blank">Cycle Routes</a></li>
       </ul>
     </nav>
     <div>
-      <h1>RiD.I.Y.</h1>
+      <div id="menu-button-container">
+        <h1>RiD.I.Y.</h1>
+        <i id="nav-menu-button" class="fa-solid fa-bars"></i>
+      </div>
       <p>Learn to repair your bicycle</p>
     </div>
   </header>
@@ -30,22 +34,30 @@
   <main class="flex-container">
     <div class="card">
       <h2>Your bicycle isn't running perfectly?</h2>
-      <p>Ask Mechanica, our intelligent robo-mechanic, to identify what's wrong.</p>
+      <i class="fa-solid fa-wrench"></i>
+      <p>Ask the <strong>fix finder</strong>, our intelligent robo-mechanic, to identify what's wrong.</p>
+      <button>Fix your bicycle</button>
     </div>
 
     <div class="card">
       <h2>This fix needs some experts?</h2>
+      <i class="fa-solid fa-map-location-dot"></i>
       <p>Find a DIY workshop or professional mechanic near you with our shop finder.</p>
+      <button>Find an expert</button>
     </div>
 
     <div class="card">
       <h2>Want to buy/sell parts & tools?</h2>
+      <i class="fa-solid fa-gears"></i>
       <p>Use our platform to find the materials you need and order them straight to your door.</p>
+      <button>Shop here</button>
     </div>
 
     <div class="card">
       <h2>Now your bicycle is fixed, take it for a ride!</h2>
-      <p>Our routefinder has itineraries for everyone, everywhere.</p>
+      <i class="fa-solid fa-person-biking"></i>
+      <p>We have itineraries for everyone, everywhere.</p>
+      <button>Find a route</button>
     </div>
   </main>
   <footer>
@@ -57,4 +69,5 @@
     </ul>
   </footer>
 </body>
+<script src="app.js"></script>
 </html>
