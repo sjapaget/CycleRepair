@@ -1,0 +1,103 @@
+body {
+  background-color: #417D7A;
+  color: #EDE6DB;
+  font-family: 'Abel', sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+header {
+  background-color: #EDE6DB;
+  color: #1A3C40;
+}
+
+nav ul {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-top: 0.5em;
+}
+
+nav li {
+  margin: 0.2em;
+  padding: 0.2em;
+}
+
+a {
+  border: solid transparent;
+  border-radius: 5px;
+  color: inherit;
+  padding:  0.1em;
+  text-decoration: none;
+}
+
+a:hover {
+  border: solid;
+}
+
+ul {
+  margin-top: 0;
+}
+
+li {
+  color: #1A3C40;
+  font-size: 17px;
+  list-style: none;
+}
+
+h1 {
+  font-family: 'Concert One', cursive;
+  font-size: 72px;
+  text-shadow: 2px 3px 5px #d6c6ad;
+}
+
+header p {
+  font-size: 42px;
+  margin-bottom: 0.2em;
+}
+
+main {
+  margin-bottom: 35px;
+}
+
+h2 {
+  font-family: 'Concert One', cursive;
+  font-size:  22px;
+}
+
+footer {
+  background-color: #EDE6DB;
+  bottom: 0;
+  height: 30px;
+  position: fixed;
+  width: 100%;
+}
+
+footer ul {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-top: 0.1em;
+}
+
+footer li {
+  margin: 0.2em;
+  
+}
+
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.card {
+  background: radial-gradient(#3a706d 30%, #305d5b);
+  border-radius: 5px;
+  margin: 0.1em;
+  width: 275px;
+  padding: 0.5em;
+}
