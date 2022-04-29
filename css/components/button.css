@@ -1,0 +1,22 @@
+.card button {
+    border: solid transparent;
+    border-radius: 6px;
+    font-family: inherit;
+    font-weight: bold;
+    margin: 1em;
+    width: 80%;
+  }
+
+  .card button:hover {
+    background-color: transparent;
+    border: solid;
+    color: #EDE6DB;
+  }
+
+  @media (min-width: 768px) {
+      .card button {
+        font-size: 20px;
+        border-radius: 8px;
+        padding: 0.5em;
+      }
+  }

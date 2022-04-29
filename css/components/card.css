@@ -5,8 +5,8 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin: 0.1em;
-    width: 275px;
+    max-width: 300px;
+    margin: 0.1em 1em;
     padding: 0.5em;
   }
 
@@ -20,11 +20,8 @@
   }
   
   .img-card {
-    border-radius: 15px;
     display: none;
-    margin: 0.1em;
-    width: 275px;
-    padding: 0.5em;
+    background: transparent;
   }
 
   @media (min-width: 768px) and (max-width: 1024px) {
@@ -32,13 +29,24 @@
     .tablet-img-card {
       display: flex;
     }
+
+    .card {
+      max-width: 27vw;
+      margin: 0.5em;
+    }
+
+    .card h2 {
+      font-size: 28px
+    }
+    .card p {
+      font-size: 22px;
+    }
   }
 
   @media (min-width: 1024px) {
 
     .img-card {
-      display: flex;
-    }
-    
+      display: grid;
+    } 
   
   }
