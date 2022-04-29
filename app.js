@@ -1,22 +1,22 @@
-const navButton = document.getElementById("nav-menu-button");
-const nav = document.querySelector("nav");
 
+const navToggleButton = document.querySelector("#nav-menu-button");
+const navOptions = document.querySelector("#nav-options");
+const navHeader = document.querySelector("#navbar-header");
+const navLogo = document.querySelector("#nav-logo");
 
+let unclicked = true;
 
-
-
-
-
-navButton.onclick = function() {
-   
-    if (nav.style.display == "none") {
-        navButton.classList.remove("fa-bars");
-        navButton.classList.add("fa-xmark");
-        nav.style.display = "block";
+navToggleButton.onclick = function() {
+    
+    if (unclicked) {
+        unclicked = false;
+        navHeader.style.display = "none"
+        navLogo.style.display = "none"
+        navOptions.style.display = "flex";
     } else {
-        navButton.classList.remove("fa-xmark");
-        navButton.classList.add("fa-bars");
-        nav.style.display = "none";
+        unclicked = true;
+        navHeader.style.display = "flex";
+        navLogo.style.display = "flex";
+        navOptions.style.display = "none";
     }
-
-};
+}
