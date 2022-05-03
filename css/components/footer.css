@@ -15,10 +15,10 @@
   }
   
   .footer li {
-    color: #1A3C40;
+    color: #1a3c405b;
     font-size: 13px;
     list-style: none;
-    margin: 0.4em
+    margin-top: 0.1em;
   }
 
   .footer a {
@@ -28,6 +28,7 @@
 
 .footer a:hover {
   background-color: #d6c6ad;
+  color: #1A3C40;
   padding: 0.5em 0.2em;
   border-radius: 5px 5px 0 0;
 
