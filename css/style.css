@@ -3,6 +3,7 @@
 @import url(components/navbar.css);
 @import url(components/footer.css);
 @import url(components/button.css);
+@import url(components/banner.css);
 
 /* Overall CSS settings */
 body {
@@ -19,39 +20,11 @@ a {
   color: inherit;
 }
 
-.img-banner {
-  display: none;
-  justify-content: space-evenly;
-  position: fixed;
-  width: 100%;
-  left: 0;
-  top: 65vh;
-  height: 29vh;
-  
-}
-
-.img-banner img {
-  border-radius: 15px;
-}
-
 header {
   margin-top: 12vh;
   width: 100%;
   background-color: #EDE6DB;
   color: #1A3C40;
-}
-
-h1 {
-  font-family: 'Concert One', cursive;
-  font-size: 64px;
-  margin-top: 0;
-  margin-bottom: 0;
-  text-shadow: 2px 3px 5px #d6c6ad;
-}
-
-.tagline {
-  font-size: 28px;
-  margin-bottom: 0.2em;
 }
 
 main {
@@ -62,20 +35,18 @@ main {
   position: relative;
 }
 
+
+.tagline {
+  font-size: 28px;
+  margin-bottom: 0.2em;
+}
+
 /* Media queries */
 
 @media (max-width: 767px) {
   .tagline {
     font-size: 28px;
     margin: 0.2em;
-  }
-
-}
-
-@media (min-width: 1023px) {
-.img-banner {
-    display: flex;
-    flex: row wrap;
   }
 
 }

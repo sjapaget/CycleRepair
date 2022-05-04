@@ -1,0 +1,22 @@
+.img-banner {
+    display: none;
+    justify-content: space-evenly;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 65vh;
+    height: 29vh;
+    
+  }
+  
+  .img-banner img {
+    border-radius: 15px;
+  }
+
+  @media (min-width: 1023px) {
+    .img-banner {
+        display: flex;
+        flex: row wrap;
+      }
+    
+    }
