@@ -36,7 +36,12 @@
   @media (min-width: 1024px) {
     .card {
       width: 90vw;
-      margin-bottom: 34.5vh;      
+      margin-bottom: 34.5vh;    
+      font-size: 22px;  
+    }
+
+    .card p {
+      margin-bottom: 5px;
     }
   
   }
